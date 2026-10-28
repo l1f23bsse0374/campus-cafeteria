@@ -4,159 +4,341 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore student-friendly daily specials and combo deals at Campus Bites cafeteria.">
+    <meta name="description" content="Discover daily specials, delicious meal combos and student-friendly prices at Campus Bites cafeteria.">
+    <meta name="theme-color" content="#123d30">
+
     <title>Daily Specials & Deals | Campus Bites</title>
+
     <link rel="stylesheet" href="../styles/style.css">
 </head>
+
 <body class="deals-page">
 
+    <!-- Navigation -->
     <header class="deals-header">
         <div class="deals-container deals-nav">
-            <a href="index.html" class="deals-brand">Campus<span>Bites</span></a>
 
-            <nav aria-label="Main navigation">
+            <a href="index.html" class="deals-brand" aria-label="Campus Bites home">
+                Campus<span>Bites</span><i>.</i>
+            </a>
+
+            <nav class="deals-navigation" aria-label="Main navigation">
                 <a href="index.html">Home</a>
                 <a href="menu.html">Menu</a>
                 <a href="deals.html" aria-current="page">Deals</a>
                 <a href="order.html">How to Order</a>
                 <a href="feedback.html">Feedback</a>
             </nav>
+
         </div>
     </header>
 
     <main>
+
+        <!-- Hero -->
         <section class="deals-hero">
-            <div class="deals-container">
-                <p class="deals-eyebrow">GOOD FOOD. GREAT VALUE.</p>
-                <h1>Today's Best <span>Deals</span></h1>
-                <p>
-                    Delicious food, satisfying combos, and student-friendly
-                    prices — all in one place.
-                </p>
-                <a href="#combo-deals" class="deals-button">Explore Our Deals</a>
+            <div class="deals-container deals-hero-grid">
+
+                <div class="deals-hero-copy">
+                    <p class="deals-eyebrow">
+                        YOUR CAMPUS. YOUR CRAVINGS.
+                    </p>
+
+                    <h1>
+                        Good food.<br>
+                        Great deals.<br>
+                        <span>Better days.</span>
+                    </h1>
+
+                    <p class="deals-hero-description">
+                        Big flavours, satisfying combos and prices made
+                        for student life. Find your next favourite meal.
+                    </p>
+
+                    <div class="deals-hero-actions">
+                        <a href="#combo-deals" class="deals-button">
+                            Explore the deals <span aria-hidden="true">↗</span>
+                        </a>
+
+                        <a href="menu.html" class="deals-secondary-link">
+                            Browse full menu
+                        </a>
+                    </div>
+
+                    <div class="deals-highlights">
+                        <span>✦ Student-friendly prices</span>
+                        <span>✦ Delicious campus favourites</span>
+                    </div>
+                </div>
+
+                <div class="deals-hero-visual">
+
+                    <div class="deals-hero-photo">
+                        <img
+                            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&amp;fit=crop&amp;w=1100&amp;q=85"
+                            alt="Fresh gourmet burger with cheese, lettuce and tomato"
+                            fetchpriority="high"
+                        >
+                    </div>
+
+                    <div class="deals-hero-stamp" aria-label="Good food, good mood">
+                        <span>GOOD</span>
+                        <strong>FOOD</strong>
+                        <span>GOOD MOOD</span>
+                    </div>
+
+                    <div class="deals-hero-caption">
+                        <span class="deals-status-dot"></span>
+                        Your next favourite is waiting
+                    </div>
+
+                </div>
             </div>
         </section>
 
-        <section class="deals-section deals-container" aria-labelledby="special-heading">
+        <!-- Daily Special -->
+        <section class="deals-section deals-container"
+                 aria-labelledby="special-heading">
+
             <div class="deals-section-heading">
-                <p class="deals-eyebrow">FRESHLY PICKED FOR YOU</p>
-                <h2 id="special-heading">Daily Special</h2>
-                <p>Make your lunch break something to look forward to.</p>
+                <div>
+                    <p class="deals-eyebrow">THE ONE TO TRY TODAY</p>
+                    <h2 id="special-heading">Daily Special<span>.</span></h2>
+                    <p>Make your lunch break something to look forward to.</p>
+                </div>
+
+                <span class="deals-section-index">01 / DAILY PICK</span>
             </div>
 
             <article class="daily-special-card">
+
                 <div class="daily-special-content">
                     <span class="deals-tag">TODAY'S PICK</span>
+
                     <h3>Campus Classic Burger</h3>
-                    <p>
-                        A juicy chicken burger served with crispy fries
-                        and a refreshing drink.
+
+                    <p class="daily-special-description">
+                        A juicy burger with crispy fries and a refreshing
+                        drink — a classic combination for your campus break.
                     </p>
-                    <ul>
+
+                    <ul class="deals-feature-list">
                         <li>Grilled chicken burger</li>
                         <li>Golden crispy fries</li>
                         <li>Regular soft drink</li>
                     </ul>
+
                     <div class="deals-price-row">
-                        <p class="deals-price">Rs. 499</p>
-                        <a href="order.html" class="deals-button">Order Details</a>
+                        <div>
+                            <span class="deals-price-label">SPECIAL PRICE</span>
+                            <p class="deals-price">Rs. 499</p>
+                        </div>
+
+                        <a href="order.html" class="deals-button">
+                            Order details <span aria-hidden="true">↗</span>
+                        </a>
                     </div>
                 </div>
 
                 <div class="daily-special-art" aria-hidden="true">
-                    <span>CB</span>
-                    <p>THE CAMPUS CLASSIC</p>
-                    <span class="special-art-label">DAILY SPECIAL</span>
+                    <div class="special-art-rings">
+                        <span class="special-art-monogram">CB</span>
+                        <span class="special-art-divider"></span>
+                        <p>THE CAMPUS CLASSIC</p>
+                        <span class="special-art-label">DAILY SPECIAL</span>
+                    </div>
                 </div>
+
             </article>
         </section>
 
-        <section class="deals-section deals-container" id="combo-deals"
+        <!-- Combo Deals -->
+        <section class="deals-section deals-container"
+                 id="combo-deals"
                  aria-labelledby="combo-heading">
+
             <div class="deals-section-heading">
-                <p class="deals-eyebrow">MORE TASTE, MORE VALUE</p>
-                <h2 id="combo-heading">Combo Deals</h2>
-                <p>Choose a combo that fits your appetite and budget.</p>
+                <div>
+                    <p class="deals-eyebrow">MORE TASTE, MORE VALUE</p>
+                    <h2 id="combo-heading">Combo Deals<span>.</span></h2>
+                    <p>Three satisfying picks for your next campus break.</p>
+                </div>
+
+                <span class="deals-section-index">02 / COMBO COLLECTION</span>
             </div>
 
             <div class="combo-grid">
+
+                <!-- Student Combo -->
                 <article class="combo-card">
-                    <div class="combo-card-top combo-student">
+                    <div class="combo-card-top">
+                        <img
+                            src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                            alt="Grilled sandwiches prepared for a quick meal"
+                            loading="lazy"
+                        >
+
                         <span class="combo-number">01</span>
-                        <span class="deals-tag">STUDENT FAVOURITE</span>
-                        <h3>Student Combo</h3>
+                        <span class="deals-tag combo-image-tag">STUDENT FAVOURITE</span>
                     </div>
+
                     <div class="combo-card-body">
-                        <p>A quick, filling meal between lectures.</p>
-                        <ul>
+                        <div class="combo-card-title-row">
+                            <h3>Student Combo</h3>
+                            <span class="combo-type">QUICK BITE</span>
+                        </div>
+
+                        <p class="combo-description">
+                            A filling, easy-going meal between lectures.
+                        </p>
+
+                        <ul class="deals-feature-list">
                             <li>Chicken sandwich</li>
                             <li>Regular fries</li>
                             <li>Soft drink</li>
                         </ul>
+
                         <div class="combo-card-footer">
-                            <p class="deals-price">Rs. 399</p>
-                            <a href="order.html" class="deals-text-link">Order details →</a>
+                            <div>
+                                <span class="deals-price-label">COMBO PRICE</span>
+                                <p class="deals-price">Rs. 399</p>
+                            </div>
+
+                            <a href="order.html" class="deals-text-link">
+                                Order details <span aria-hidden="true">↗</span>
+                            </a>
                         </div>
                     </div>
                 </article>
 
+                <!-- Lunch Combo -->
                 <article class="combo-card">
-                    <div class="combo-card-top combo-lunch">
+                    <div class="combo-card-top">
+                        <img
+                            src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                            alt="Aromatic rice dish served as a hearty lunch"
+                            loading="lazy"
+                        >
+
                         <span class="combo-number">02</span>
-                        <span class="deals-tag">LUNCH TIME</span>
-                        <h3>Lunch Combo</h3>
+                        <span class="deals-tag combo-image-tag">LUNCH TIME</span>
                     </div>
+
                     <div class="combo-card-body">
-                        <p>A satisfying lunch to power through your day.</p>
-                        <ul>
+                        <div class="combo-card-title-row">
+                            <h3>Lunch Combo</h3>
+                            <span class="combo-type">FULL MEAL</span>
+                        </div>
+
+                        <p class="combo-description">
+                            A hearty lunch to keep you going all afternoon.
+                        </p>
+
+                        <ul class="deals-feature-list">
                             <li>Chicken biryani</li>
                             <li>Raita and salad</li>
                             <li>Regular drink</li>
                         </ul>
+
                         <div class="combo-card-footer">
-                            <p class="deals-price">Rs. 549</p>
-                            <a href="order.html" class="deals-text-link">Order details →</a>
+                            <div>
+                                <span class="deals-price-label">COMBO PRICE</span>
+                                <p class="deals-price">Rs. 549</p>
+                            </div>
+
+                            <a href="order.html" class="deals-text-link">
+                                Order details <span aria-hidden="true">↗</span>
+                            </a>
                         </div>
                     </div>
                 </article>
 
+                <!-- Snack Combo -->
                 <article class="combo-card">
-                    <div class="combo-card-top combo-snack">
+                    <div class="combo-card-top">
+                        <img
+                            src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                            alt="Crispy golden fries served as a snack"
+                            loading="lazy"
+                        >
+
                         <span class="combo-number">03</span>
-                        <span class="deals-tag">SNACK BREAK</span>
-                        <h3>Snack Combo</h3>
+                        <span class="deals-tag combo-image-tag">SNACK BREAK</span>
                     </div>
+
                     <div class="combo-card-body">
-                        <p>The perfect bite when you need a little break.</p>
-                        <ul>
+                        <div class="combo-card-title-row">
+                            <h3>Snack Combo</h3>
+                            <span class="combo-type">EASY PICK</span>
+                        </div>
+
+                        <p class="combo-description">
+                            The perfect snack when you need a little reset.
+                        </p>
+
+                        <ul class="deals-feature-list">
                             <li>Loaded fries</li>
                             <li>Two chicken nuggets</li>
                             <li>Regular soft drink</li>
                         </ul>
+
                         <div class="combo-card-footer">
-                            <p class="deals-price">Rs. 349</p>
-                            <a href="order.html" class="deals-text-link">Order details →</a>
+                            <div>
+                                <span class="deals-price-label">COMBO PRICE</span>
+                                <p class="deals-price">Rs. 349</p>
+                            </div>
+
+                            <a href="order.html" class="deals-text-link">
+                                Order details <span aria-hidden="true">↗</span>
+                            </a>
                         </div>
                     </div>
                 </article>
+
             </div>
         </section>
 
-        <section class="deals-note deals-container">
-            <h2>A little note before you order</h2>
-            <p>
-                Prices are listed in Pakistani Rupees (PKR).
-                Daily specials and availability may vary.
-                Please confirm today's offers at the cafeteria counter.
-            </p>
-            <a href="feedback.html">Questions or feedback? Contact us →</a>
+        <!-- Important information -->
+        <section class="deals-note deals-container"
+                 aria-labelledby="deals-note-heading">
+
+            <div class="deals-note-icon" aria-hidden="true">i</div>
+
+            <div class="deals-note-content">
+                <p class="deals-eyebrow">A QUICK HEADS-UP</p>
+
+                <h2 id="deals-note-heading">
+                    Good to know before you order.
+                </h2>
+
+                <p>
+                    Prices are listed in Pakistani Rupees (PKR).
+                    Daily specials and availability may vary, so please
+                    confirm today's offers at the cafeteria counter.
+                </p>
+
+                <a href="feedback.html">
+                    Questions or feedback? Contact us <span aria-hidden="true">→</span>
+                </a>
+            </div>
         </section>
+
     </main>
 
+    <!-- Footer -->
     <footer class="deals-footer">
-        <div class="deals-container">
-            <p><strong>Campus Bites</strong> — Good food, better campus days.</p>
-            <p>&copy; 2026 Campus Bites. All rights reserved.</p>
+        <div class="deals-container deals-footer-inner">
+
+            <a href="index.html" class="deals-brand">
+                Campus<span>Bites</span><i>.</i>
+            </a>
+
+            <p>Good food, better campus days.</p>
+
+            <p class="deals-copyright">
+                &copy; 2026 Campus Bites. All rights reserved.
+            </p>
+
         </div>
     </footer>
 
