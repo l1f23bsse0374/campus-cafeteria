@@ -1,0 +1,43 @@
+/* Campus Bites - Shared Stylesheet
+   Plain HTML + CSS only. Colours: warm cafeteria theme. */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, Helvetica, sans-serif; line-height: 1.6; color: #2b2b2b; background: #fff8f0; }
+a { color: #b45309; }
+header { background: #7c2d12; color: #fff; padding: 1.2rem; text-align: center; }
+header h1 { font-size: 2rem; letter-spacing: 0.5px; }
+header p { opacity: 0.9; }
+nav { background: #431407; padding: 0.6rem; text-align: center; }
+nav a { color: #fff; text-decoration: none; margin: 0 0.9rem; font-weight: bold; }
+nav a:hover, nav a.active { text-decoration: underline; color: #fcd34d; }
+main { max-width: 900px; margin: 1.5rem auto; padding: 0 1rem 2rem; }
+section, .card { background: #fff; border: 1px solid #f0d9b5; border-radius: 10px; padding: 1.2rem; margin-bottom: 1.2rem; }
+h2 { color: #7c2d12; margin-bottom: 0.6rem; }
+h3 { color: #92400e; margin: 1rem 0 0.4rem; }
+ul { padding-left: 1.2rem; }
+table { width: 100%; border-collapse: collapse; margin-top: 0.6rem; }
+th, td { border: 1px solid #e5d5b8; padding: 0.55rem; text-align: left; }
+th { background: #fef3c7; }
+.price { font-weight: bold; white-space: nowrap; }
+.deal { border-left: 5px solid #d97706; }
+.steps li { margin-bottom: 0.5rem; }
+form label { display: block; font-weight: bold; margin-top: 0.8rem; }
+form input, form textarea { width: 100%; padding: 0.6rem; margin-top: 0.25rem; border: 1px solid #d6c2a0; border-radius: 6px; font: inherit; }
+form button { margin-top: 1rem; background: #7c2d12; color: #fff; border: 0; padding: 0.7rem 1.4rem; border-radius: 6px; cursor: pointer; font-weight: bold; }
+form button:hover { background: #9a3412; }
+footer { text-align: center; padding: 1rem; color: #666; font-size: 0.9rem; }
+.note { background: #fef3c7; border-radius: 8px; padding: 0.8rem 1rem; }
+
+/* Responsiveness - media queries (Task 7 requirement) */
+@media (max-width: 700px) {
+  header h1 { font-size: 1.5rem; }
+  nav a { display: inline-block; margin: 0.3rem 0.5rem; }
+  main { margin-top: 1rem; }
+  th, td { font-size: 0.9rem; padding: 0.45rem; }
+}
+@media (max-width: 450px) {
+  section, .card { padding: 0.9rem; }
+  table, thead, tbody, th, td, tr { display: block; width: 100%; }
+  thead { display: none; }
+  td { border: 0; border-bottom: 1px solid #eee; }
+  td::before { font-weight: bold; }
+}
