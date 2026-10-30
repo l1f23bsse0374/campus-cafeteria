@@ -1,346 +1,227 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover daily specials, delicious meal combos and student-friendly prices at Campus Bites cafeteria.">
-    <meta name="theme-color" content="#123d30">
-
-    <title>Daily Specials & Deals | Campus Bites</title>
-
+    <meta name="description" content="Explore student-friendly meal deals made from the Campus Bites menu.">
+    <meta name="theme-color" content="#176b50">
+    <title>Daily Specials &amp; Deals | Campus Bites</title>
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 
 <body class="deals-page">
-
-    <!-- Navigation -->
-    <header class="deals-header">
-        <div class="deals-container deals-nav">
-
-            <a href="index.html" class="deals-brand" aria-label="Campus Bites home">
-                Campus<span>Bites</span><i>.</i>
-            </a>
-
-            <nav class="deals-navigation" aria-label="Main navigation">
+    <!-- Shared site navigation -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand" aria-label="Campus Bites home">Campus<span>Bites</span></a>
+            <nav class="site-nav" aria-label="Main navigation">
                 <a href="index.html">Home</a>
                 <a href="menu.html">Menu</a>
-                <a href="deals.html" aria-current="page">Deals</a>
+                <a href="deals.html" class="active" aria-current="page">Deals</a>
                 <a href="order.html">How to Order</a>
                 <a href="feedback.html">Feedback</a>
             </nav>
-
         </div>
     </header>
 
     <main>
-
-        <!-- Hero -->
+        <!-- Deals hero -->
         <section class="deals-hero">
             <div class="deals-container deals-hero-grid">
-
                 <div class="deals-hero-copy">
-                    <p class="deals-eyebrow">
-                        YOUR CAMPUS. YOUR CRAVINGS.
-                    </p>
-
-                    <h1>
-                        Good food.<br>
-                        Great deals.<br>
-                        <span>Better days.</span>
-                    </h1>
-
+                    <p class="deals-eyebrow">YOUR CAMPUS. YOUR CRAVINGS.</p>
+                    <h1>Good food.<br>Great deals.<br><span>Better days.</span></h1>
                     <p class="deals-hero-description">
-                        Big flavours, satisfying combos and prices made
-                        for student life. Find your next favourite meal.
+                        Your Campus Bites favourites, thoughtfully combined
+                        into delicious deals at student-friendly prices.
                     </p>
-
                     <div class="deals-hero-actions">
-                        <a href="#combo-deals" class="deals-button">
-                            Explore the deals <span aria-hidden="true">↗</span>
-                        </a>
-
-                        <a href="menu.html" class="deals-secondary-link">
-                            Browse full menu
-                        </a>
+                        <a href="#combo-deals" class="deals-button">Explore the deals <span aria-hidden="true">↗</span></a>
+                        <a href="menu.html" class="deals-secondary-link">Browse full menu</a>
                     </div>
-
                     <div class="deals-highlights">
-                        <span>✦ Student-friendly prices</span>
-                        <span>✦ Delicious campus favourites</span>
+                        <span>✦ Made from our menu favourites</span>
+                        <span>✦ More taste, better value</span>
                     </div>
                 </div>
 
                 <div class="deals-hero-visual">
-
                     <div class="deals-hero-photo">
-                        <img
-                            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&amp;fit=crop&amp;w=1100&amp;q=85"
-                            alt="Fresh gourmet burger with cheese, lettuce and tomato"
-                            fetchpriority="high"
-                        >
+                        <img src="../images/ chicken-biryani.png" alt="Campus Bites chicken biryani" fetchpriority="high">
                     </div>
-
-                    <div class="deals-hero-stamp" aria-label="Good food, good mood">
-                        <span>GOOD</span>
+                    <div class="deals-hero-stamp" aria-label="Fresh food, great value">
+                        <span>FRESH</span>
                         <strong>FOOD</strong>
-                        <span>GOOD MOOD</span>
+                        <span>GREAT VALUE</span>
                     </div>
-
                     <div class="deals-hero-caption">
                         <span class="deals-status-dot"></span>
-                        Your next favourite is waiting
+                        Your favourite menu items, together
                     </div>
-
                 </div>
             </div>
         </section>
 
-        <!-- Daily Special -->
-        <section class="deals-section deals-container"
-                 aria-labelledby="special-heading">
-
+        <!-- Daily special: Chicken Biryani + Fresh Lime -->
+        <section class="deals-section deals-container" aria-labelledby="special-heading">
             <div class="deals-section-heading">
                 <div>
                     <p class="deals-eyebrow">THE ONE TO TRY TODAY</p>
                     <h2 id="special-heading">Daily Special<span>.</span></h2>
-                    <p>Make your lunch break something to look forward to.</p>
+                    <p>A satisfying campus lunch with a refreshing drink.</p>
                 </div>
-
                 <span class="deals-section-index">01 / DAILY PICK</span>
             </div>
 
             <article class="daily-special-card">
-
                 <div class="daily-special-content">
                     <span class="deals-tag">TODAY'S PICK</span>
-
-                    <h3>Campus Classic Burger</h3>
-
+                    <h3>Biryani &amp; Lime Combo</h3>
                     <p class="daily-special-description">
-                        A juicy burger with crispy fries and a refreshing
-                        drink — a classic combination for your campus break.
+                        Enjoy flavourful chicken biryani paired with a chilled
+                        fresh lime drink — a delicious break between classes.
                     </p>
-
                     <ul class="deals-feature-list">
-                        <li>Grilled chicken burger</li>
-                        <li>Golden crispy fries</li>
-                        <li>Regular soft drink</li>
+                        <li>Chicken Biryani</li>
+                        <li>Refreshing Fresh Lime</li>
                     </ul>
-
                     <div class="deals-price-row">
                         <div>
                             <span class="deals-price-label">SPECIAL PRICE</span>
-                            <p class="deals-price">Rs. 499</p>
+                            <del class="deals-original-price">Rs. 500</del>
+                            <p class="deals-price">Rs. 450</p>
                         </div>
-
-                        <a href="order.html" class="deals-button">
-                            Order details <span aria-hidden="true">↗</span>
-                        </a>
+                        <a href="order.html" class="deals-button">Order details <span aria-hidden="true">↗</span></a>
                     </div>
                 </div>
-
-                <div class="daily-special-art" aria-hidden="true">
-                    <div class="special-art-rings">
-                        <span class="special-art-monogram">CB</span>
-                        <span class="special-art-divider"></span>
-                        <p>THE CAMPUS CLASSIC</p>
-                        <span class="special-art-label">DAILY SPECIAL</span>
-                    </div>
+                <div class="daily-special-art">
+                    <img class="daily-special-photo" src="../images/ chicken-biryani.png" alt="Chicken biryani served with raita">
                 </div>
-
             </article>
         </section>
 
-        <!-- Combo Deals -->
-        <section class="deals-section deals-container"
-                 id="combo-deals"
-                 aria-labelledby="combo-heading">
-
+        <!-- Combo deals: all items and images are from the Menu page -->
+        <section class="deals-section deals-container" id="combo-deals" aria-labelledby="combo-heading">
             <div class="deals-section-heading">
                 <div>
                     <p class="deals-eyebrow">MORE TASTE, MORE VALUE</p>
                     <h2 id="combo-heading">Combo Deals<span>.</span></h2>
-                    <p>Three satisfying picks for your next campus break.</p>
+                    <p>Three tasty combinations made from our menu favourites.</p>
                 </div>
-
                 <span class="deals-section-index">02 / COMBO COLLECTION</span>
             </div>
 
             <div class="combo-grid">
-
-                <!-- Student Combo -->
+                <!-- Breakfast combo: Rs. 250 + Rs. 100 = Rs. 350; 10% offer = Rs. 315 -->
                 <article class="combo-card">
                     <div class="combo-card-top">
-                        <img
-                            src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
-                            alt="Grilled sandwiches prepared for a quick meal"
-                            loading="lazy"
-                        >
-
+                        <img src="../images/halwa-puri.png" alt="Traditional halwa puri breakfast" loading="lazy">
                         <span class="combo-number">01</span>
-                        <span class="deals-tag combo-image-tag">STUDENT FAVOURITE</span>
+                        <span class="deals-tag combo-image-tag">BREAKFAST FAVOURITE</span>
                     </div>
-
                     <div class="combo-card-body">
                         <div class="combo-card-title-row">
-                            <h3>Student Combo</h3>
-                            <span class="combo-type">QUICK BITE</span>
+                            <h3>Breakfast Combo</h3>
+                            <span class="combo-type">MORNING PICK</span>
                         </div>
-
-                        <p class="combo-description">
-                            A filling, easy-going meal between lectures.
-                        </p>
-
+                        <p class="combo-description">Start your day with a traditional breakfast and hot chai.</p>
                         <ul class="deals-feature-list">
-                            <li>Chicken sandwich</li>
-                            <li>Regular fries</li>
-                            <li>Soft drink</li>
+                            <li>Halwa Puri — Rs. 250</li>
+                            <li>Traditional Chai — Rs. 100</li>
                         </ul>
-
                         <div class="combo-card-footer">
                             <div>
                                 <span class="deals-price-label">COMBO PRICE</span>
-                                <p class="deals-price">Rs. 399</p>
+                                <del class="deals-original-price">Rs. 350</del>
+                                <p class="deals-price">Rs. 315</p>
                             </div>
-
-                            <a href="order.html" class="deals-text-link">
-                                Order details <span aria-hidden="true">↗</span>
-                            </a>
+                            <a href="order.html" class="deals-text-link">Order details <span aria-hidden="true">↗</span></a>
                         </div>
                     </div>
                 </article>
 
-                <!-- Lunch Combo -->
+                <!-- Lunch combo: Rs. 350 + Rs. 150 = Rs. 500; 10% offer = Rs. 450 -->
                 <article class="combo-card">
                     <div class="combo-card-top">
-                        <img
-                            src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
-                            alt="Aromatic rice dish served as a hearty lunch"
-                            loading="lazy"
-                        >
-
+                        <img src="../images/chicken-biryani-clean.png" alt="Chicken biryani with raita" loading="lazy">
                         <span class="combo-number">02</span>
                         <span class="deals-tag combo-image-tag">LUNCH TIME</span>
                     </div>
-
                     <div class="combo-card-body">
                         <div class="combo-card-title-row">
-                            <h3>Lunch Combo</h3>
+                            <h3>Campus Lunch</h3>
                             <span class="combo-type">FULL MEAL</span>
                         </div>
-
-                        <p class="combo-description">
-                            A hearty lunch to keep you going all afternoon.
-                        </p>
-
+                        <p class="combo-description">A filling biryani meal with a cool, refreshing drink.</p>
                         <ul class="deals-feature-list">
-                            <li>Chicken biryani</li>
-                            <li>Raita and salad</li>
-                            <li>Regular drink</li>
+                            <li>Chicken Biryani — Rs. 350</li>
+                            <li>Fresh Lime — Rs. 150</li>
                         </ul>
-
                         <div class="combo-card-footer">
                             <div>
                                 <span class="deals-price-label">COMBO PRICE</span>
-                                <p class="deals-price">Rs. 549</p>
+                                <del class="deals-original-price">Rs. 500</del>
+                                <p class="deals-price">Rs. 450</p>
                             </div>
-
-                            <a href="order.html" class="deals-text-link">
-                                Order details <span aria-hidden="true">↗</span>
-                            </a>
+                            <a href="order.html" class="deals-text-link">Order details <span aria-hidden="true">↗</span></a>
                         </div>
                     </div>
                 </article>
 
-                <!-- Snack Combo -->
+                <!-- Snack combo: Rs. 280 + Rs. 350 = Rs. 630; 10% offer = Rs. 567 -->
                 <article class="combo-card">
                     <div class="combo-card-top">
-                        <img
-                            src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
-                            alt="Crispy golden fries served as a snack"
-                            loading="lazy"
-                        >
-
+                        <img src="../images/chicken-shawarma.png" alt="Chicken shawarma wrap" loading="lazy">
                         <span class="combo-number">03</span>
                         <span class="deals-tag combo-image-tag">SNACK BREAK</span>
                     </div>
-
                     <div class="combo-card-body">
                         <div class="combo-card-title-row">
-                            <h3>Snack Combo</h3>
-                            <span class="combo-type">EASY PICK</span>
+                            <h3>Snack Break Combo</h3>
+                            <span class="combo-type">QUICK BITE</span>
                         </div>
-
-                        <p class="combo-description">
-                            The perfect snack when you need a little reset.
-                        </p>
-
+                        <p class="combo-description">A tasty shawarma and loaded fries for your break between lectures.</p>
                         <ul class="deals-feature-list">
-                            <li>Loaded fries</li>
-                            <li>Two chicken nuggets</li>
-                            <li>Regular soft drink</li>
+                            <li>Chicken Shawarma — Rs. 280</li>
+                            <li>Loaded Fries — Rs. 350</li>
                         </ul>
-
                         <div class="combo-card-footer">
                             <div>
                                 <span class="deals-price-label">COMBO PRICE</span>
-                                <p class="deals-price">Rs. 349</p>
+                                <del class="deals-original-price">Rs. 630</del>
+                                <p class="deals-price">Rs. 567</p>
                             </div>
-
-                            <a href="order.html" class="deals-text-link">
-                                Order details <span aria-hidden="true">↗</span>
-                            </a>
+                            <a href="order.html" class="deals-text-link">Order details <span aria-hidden="true">↗</span></a>
                         </div>
                     </div>
                 </article>
-
             </div>
         </section>
 
-        <!-- Important information -->
-        <section class="deals-note deals-container"
-                 aria-labelledby="deals-note-heading">
-
+        <!-- Ordering information -->
+        <section class="deals-note deals-container" aria-labelledby="deals-note-heading">
             <div class="deals-note-icon" aria-hidden="true">i</div>
-
             <div class="deals-note-content">
                 <p class="deals-eyebrow">A QUICK HEADS-UP</p>
-
-                <h2 id="deals-note-heading">
-                    Good to know before you order.
-                </h2>
-
+                <h2 id="deals-note-heading">Good to know before you order.</h2>
                 <p>
-                    Prices are listed in Pakistani Rupees (PKR).
-                    Daily specials and availability may vary, so please
-                    confirm today's offers at the cafeteria counter.
+                    Prices are listed in Pakistani Rupees (PKR). Each combo
+                    includes a proposed 10% student discount on the combined
+                    menu price. Please confirm today's offers and availability
+                    at the cafeteria counter.
                 </p>
-
-                <a href="feedback.html">
-                    Questions or feedback? Contact us <span aria-hidden="true">→</span>
-                </a>
+                <a href="feedback.html">Questions or feedback? Contact us <span aria-hidden="true">→</span></a>
             </div>
         </section>
-
     </main>
 
-    <!-- Footer -->
-    <footer class="deals-footer">
-        <div class="deals-container deals-footer-inner">
-
-            <a href="index.html" class="deals-brand">
-                Campus<span>Bites</span><i>.</i>
-            </a>
-
+    <!-- Shared site footer -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <a href="index.html" class="brand footer-brand" aria-label="Campus Bites home">Campus<span>Bites</span></a>
             <p>Good food, better campus days.</p>
-
-            <p class="deals-copyright">
-                &copy; 2026 Campus Bites. All rights reserved.
-            </p>
-
+            <p>&copy; 2026 Campus Bites. All rights reserved.</p>
         </div>
     </footer>
-
 </body>
 </html>
