@@ -312,3 +312,225 @@
          flex-direction: column;
      }
  }
+
+
+/* ==========================================
+   CAMPUS BITES - MENU PAGE STYLES
+   ========================================== */
+
+/* Menu Hero Section */
+
+.menu-hero {
+    padding: 76px 0 62px;
+    background: linear-gradient(120deg, #edf4e9, #f8f3e7);
+}
+
+.menu-hero h1 {
+    margin: 0;
+    font-size: clamp(2.7rem, 6vw, 4rem);
+    line-height: 1.15;
+    letter-spacing: -2px;
+}
+
+.menu-hero h1 span {
+    color: var(--color-primary);
+}
+
+.menu-hero-description {
+    max-width: 650px;
+    margin: 22px 0 30px;
+    color: var(--color-muted);
+    font-size: 1.08rem;
+}
+
+/* Menu Category Navigation */
+
+.menu-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.menu-categories a {
+    display: inline-block;
+    padding: 10px 18px;
+    background: var(--color-surface);
+    color: var(--color-primary);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    font-weight: 700;
+    transition: background 0.2s, color 0.2s;
+}
+
+.menu-categories a:hover,
+.menu-categories a:focus-visible {
+    background: var(--color-primary);
+    color: #ffffff;
+}
+
+/* Menu Sections */
+
+.menu-section {
+    scroll-margin-top: 20px;
+}
+
+.menu-section h2 {
+    margin-bottom: 12px;
+}
+
+.menu-section-description {
+    margin: 0;
+    color: var(--color-muted);
+}
+
+.menu-alternate {
+    background: #ffffff;
+}
+
+/* Menu Card Grid */
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 32px;
+}
+
+/* Food Menu Cards */
+
+.menu-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 0;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.menu-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px rgba(26, 53, 39, 0.12);
+}
+
+/* Food Images */
+
+.menu-card-image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+/* Card Text Content */
+
+.menu-card-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 24px;
+}
+
+.menu-card h3 {
+    margin: 0 0 12px;
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+.menu-card p {
+    flex-grow: 1;
+    margin: 0 0 22px;
+    color: var(--color-muted);
+    font-size: 0.95rem;
+}
+
+/* Menu Item Prices */
+
+.menu-price {
+    display: block;
+    margin-top: auto;
+    color: var(--color-primary);
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+/* ==========================================
+   MENU PAGE RESPONSIVE DESIGN
+   ========================================== */
+
+/* Tablet Screens */
+
+@media (max-width: 800px) {
+
+    .menu-hero {
+        padding: 60px 0;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .menu-card-content {
+        padding: 22px;
+    }
+}
+
+/* Mobile Screens */
+
+@media (max-width: 520px) {
+
+    .menu-hero {
+        padding: 48px 0;
+    }
+
+    .menu-hero h1 {
+        letter-spacing: -1px;
+    }
+
+    .menu-hero-description {
+        font-size: 1rem;
+    }
+
+    .menu-categories {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-categories a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .menu-card-content {
+        padding: 20px;
+    }
+
+    .menu-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .menu-price {
+        font-size: 1.2rem;
+    }
+}
+
+/* Accessibility: Reduced Motion */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .menu-card,
+    .menu-categories a {
+        transition: none;
+    }
+
+    .menu-card:hover {
+        transform: none;
+    }
+}
