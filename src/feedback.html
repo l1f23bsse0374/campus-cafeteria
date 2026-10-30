@@ -2,51 +2,57 @@
 <html lang="en">
 
 <head>
+    <!-- Basic document metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feedback & Contact | Campus Bites</title>
+    <meta name="description" content="Share your suggestions, inquiries, or feedback with the Campus Bites cafeteria team.">
+    <title>Feedback &amp; Contact | Campus Bites</title>
+
+    <!-- Shared stylesheet across all pages -->
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 
 <body>
 
+    <!-- Shared Website Header and Navigation -->
     <header class="site-header">
         <div class="container header-inner">
-            <a class="brand" href="index.html">Campus<span>Bites</span></a>
+            <a class="brand" href="index.html" aria-label="Campus Bites home">Campus<span>Bites</span></a>
             <nav class="site-nav" aria-label="Main Navigation">
                 <a href="index.html">Home</a>
                 <a href="menu.html">Menu</a>
                 <a href="deals.html">Deals</a>
                 <a href="order.html">How to Order</a>
-                <a class="active" href="feedback.html">Feedback</a>
+                <a class="active" href="feedback.html" aria-current="page">Feedback</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
+        <!-- Feedback Page Hero Header -->
         <section class="hero feedback-page-header">
             <div class="container">
                 <h1>Get in <span>Touch</span></h1>
-                <p class="hero-description" style="margin: 15px auto 0;">
+                <p class="hero-description">
                     We would love to hear your suggestions, comments, or any new menu ideas. Your feedback helps us serve the campus better!
                 </p>
             </div>
         </section>
 
-        <!-- Main Contact & Form Section -->
+        <!-- Main Contact Details & Feedback Form Section -->
         <section class="section">
             <div class="container contact-wrapper">
                 
-                <!-- Left Column: Contact Details & Image -->
+                <!-- Left Column: Contact Information Cards & Cafeteria Photo -->
                 <div class="contact-info-wrapper">
                     <div class="contact-details-card">
                         <h3>Contact Information</h3>
                         <p>Reach out to us directly or drop by the cafeteria during our operating hours.</p>
                         
                         <ul class="contact-list">
+                            <!-- Location Detail Item -->
                             <li class="contact-item">
-                                <svg class="contact-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <svg class="contact-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.243-4.243a8 8 0 1111.314 0z"></path>
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                                 </svg>
@@ -55,8 +61,10 @@
                                     <p>Student Center, Ground Floor (Main Campus)</p>
                                 </div>
                             </li>
+
+                            <!-- Email Detail Item -->
                             <li class="contact-item">
-                                <svg class="contact-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <svg class="contact-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                                 </svg>
                                 <div class="contact-text">
@@ -64,8 +72,10 @@
                                     <p>support@campusbites.ucp.edu.pk</p>
                                 </div>
                             </li>
+
+                            <!-- Phone Detail Item -->
                             <li class="contact-item">
-                                <svg class="contact-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <svg class="contact-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
                                 </svg>
                                 <div class="contact-text">
@@ -76,10 +86,10 @@
                         </ul>
                     </div>
 
-                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="Campus Cafeteria Seating" class="contact-image">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="Campus Cafeteria Seating" class="contact-image" loading="lazy">
                 </div>
 
-                <!-- Right Column: Feedback Form -->
+                <!-- Right Column: Interactive Feedback Form -->
                 <div class="feedback-form-container">
                     <h3>Share Your Feedback</h3>
                     <p style="margin-top: 0; color: var(--color-muted); margin-bottom: 24px;">Please fill out the form below and we will get back to you as soon as possible.</p>
@@ -113,44 +123,49 @@
             </div>
         </section>
 
-        <!-- NEW: Feedback Process Timeline -->
+        <!-- Feedback Process Timeline Section -->
         <section class="section" style="background: var(--color-surface); border-top: 1px solid var(--color-border);">
             <div class="container">
-                <div style="text-align: center; max-width: 600px; margin: 0 auto 40px;">
+                <div style="text-align: center; max-width: 600px; margin: 0 auto 36px;">
                     <h2>How We Use Your Feedback</h2>
                     <p>We take your suggestions seriously. Here is what happens after you hit submit.</p>
                 </div>
                 <div class="process-grid">
+                    <!-- Process Step 1 -->
                     <div class="process-step">
                         <div class="step-number">1</div>
-                        <h4>Read & Review</h4>
+                        <h4>Read &amp; Review</h4>
                         <p>Our management team reviews every submission daily to identify common requests or concerns.</p>
                     </div>
+
+                    <!-- Process Step 2 -->
                     <div class="process-step">
                         <div class="step-number">2</div>
                         <h4>Discuss with Chefs</h4>
                         <p>We share menu suggestions and food quality feedback directly with our kitchen staff.</p>
                     </div>
+
+                    <!-- Process Step 3 -->
                     <div class="process-step">
                         <div class="step-number">3</div>
-                        <h4>Improve & Update</h4>
+                        <h4>Improve &amp; Update</h4>
                         <p>We implement the best ideas, update our menu, and improve our services for everyone.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- FAQ Section -->
+        <!-- Frequently Asked Questions (FAQ) Section -->
         <section class="section faq-section">
             <div class="container">
-                <div style="text-align: center; max-width: 600px; margin: 0 auto 40px;">
+                <div style="text-align: center; max-width: 600px; margin: 0 auto 36px;">
                     <h2>Common Inquiries</h2>
                     <p>Before reaching out, you might find the answer to your question below.</p>
                 </div>
                 <div class="faq-grid">
                     <article class="faq-card">
                         <h4>Do you offer vegetarian options?</h4>
-                        <p>Yes, we have a dedicated section on our menu for vegetarian and vegan meals.</p>
+                        <p>Yes, we have a dedicated selection on our menu for vegetarian and vegan meals.</p>
                     </article>
                     <article class="faq-card">
                         <h4>How do the Daily Combo Deals work?</h4>
@@ -158,7 +173,7 @@
                     </article>
                     <article class="faq-card">
                         <h4>Can I pre-order my food online?</h4>
-                        <p>Currently, orders must be placed physically at the counter, but we are working on an online portal!</p>
+                        <p>Currently, orders must be placed physically at the counter, but an online ordering option is coming soon!</p>
                     </article>
                     <article class="faq-card">
                         <h4>Who do I contact for lost items?</h4>
@@ -168,56 +183,59 @@
             </div>
         </section>
 
-        <!-- Location Map Section -->
+        <!-- Cafeteria Location Map Section -->
         <section class="section map-section" style="background: var(--color-surface); border-top: 1px solid var(--color-border);">
             <div class="container">
-                <div style="text-align: center; max-width: 600px; margin: 0 auto 40px;">
+                <div style="text-align: center; max-width: 600px; margin: 0 auto 36px;">
                     <h2>Find Us on Campus</h2>
                     <p>Campus Bites is located on the ground floor. Drop by anytime during working hours!</p>
                 </div>
-                <div class="map-container" style="border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); border: 1px solid var(--color-border); height: 400px;">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.490161405103!2d74.26573887532345!3d31.455648850337345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919017432b1835b%3A0xe396992a5b05891c!2sUniversity%20of%20Central%20Punjab!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="map-container" style="border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); border: 1px solid var(--color-border); height: 380px;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.490161405103!2d74.26573887532345!3d31.455648850337345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919017432b1835b%3A0xe396992a5b05891c!2sUniversity%20of%20Central%20Punjab!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Campus Bites Location Map"></iframe>
                 </div>
             </div>
         </section>
 
-        <!-- Student Reviews Section -->
+        <!-- Student Reviews & Testimonials Section -->
         <section class="section reviews-section">
             <div class="container">
-                <div style="text-align: center; max-width: 600px; margin: 0 auto 40px;">
+                <div style="text-align: center; max-width: 600px; margin: 0 auto 36px;">
                     <h2>What Students Are Saying</h2>
                     <p>Recent feedback from the Campus Bites community.</p>
                 </div>
                 <div class="card-grid">
+                    <!-- Review Card 1 -->
                     <article class="feature-card">
-                        <div style="color: var(--color-accent); font-size: 1.2rem; margin-bottom: 10px;">★★★★★</div>
+                        <div style="color: var(--color-accent); font-size: 1.2rem; margin-bottom: 8px;">★★★★★</div>
                         <p>"The new lunch combos are a lifesaver between back-to-back classes. Highly recommended!"</p>
-                        <h4 style="margin-top: 15px; margin-bottom: 0;">- Ali R.</h4>
+                        <h4 style="margin-top: 14px; margin-bottom: 2px;">&mdash; Ali R.</h4>
                         <span class="small-note">BS-SE Student</span>
                     </article>
 
+                    <!-- Review Card 2 -->
                     <article class="feature-card">
-                        <div style="color: var(--color-accent); font-size: 1.2rem; margin-bottom: 10px;">★★★★☆</div>
+                        <div style="color: var(--color-accent); font-size: 1.2rem; margin-bottom: 8px;">★★★★☆</div>
                         <p>"Great food quality. I just wish the line was a bit shorter during the 1 PM break."</p>
-                        <h4 style="margin-top: 15px; margin-bottom: 0;">- Fatima S.</h4>
+                        <h4 style="margin-top: 14px; margin-bottom: 2px;">&mdash; Fatima S.</h4>
                         <span class="small-note">BBA Student</span>
                     </article>
 
+                    <!-- Review Card 3 -->
                     <article class="feature-card">
-                        <div style="color: var(--color-accent); font-size: 1.2rem; margin-bottom: 10px;">★★★★★</div>
+                        <div style="color: var(--color-accent); font-size: 1.2rem; margin-bottom: 8px;">★★★★★</div>
                         <p>"The feedback form actually works! I suggested adding cold coffee, and they added it."</p>
-                        <h4 style="margin-top: 15px; margin-bottom: 0;">- Usman M.</h4>
+                        <h4 style="margin-top: 14px; margin-bottom: 2px;">&mdash; Usman M.</h4>
                         <span class="small-note">BS-CS Student</span>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- NEW: Newsletter & Socials Section -->
-        <section class="feedback-banner" style="background: var(--color-primary-dark); color: #fff;">
-            <div class="container feedback-banner-inner" style="align-items: center;">
+        <!-- Newsletter Subscription & Social Links Banner -->
+        <section class="feedback-banner" style="background: var(--color-primary-dark); color: #ffffff;">
+            <div class="container feedback-banner-inner">
                 <div style="max-width: 500px;">
-                    <h2 style="color: #fff;">Stay Updated</h2>
+                    <h2 style="color: #ffffff;">Stay Updated</h2>
                     <p style="color: #d4dfd7;">Subscribe to get notified about daily deals, new menu items, and cafeteria events.</p>
                 </div>
                 
@@ -243,9 +261,10 @@
         </section>
     </main>
 
+    <!-- Shared Website Footer -->
     <footer class="site-footer">
         <div class="container footer-inner">
-            <a class="brand footer-brand" href="index.html">Campus<span>Bites</span></a>
+            <a class="brand footer-brand" href="index.html" aria-label="Campus Bites home">Campus<span>Bites</span></a>
             <p>&copy; 2026 Campus Bites Cafeteria &bull; DevOps Fundamentals Project</p>
         </div>
     </footer>
