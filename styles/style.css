@@ -1,3 +1,509 @@
+ :root {
+     --color-primary: #176b50;
+     --color-primary-dark: #104b39;
+     --color-accent: #e6b85c;
+     --color-background: #f7f8f4;
+     --color-surface: #ffffff;
+     --color-text: #202b27;
+     --color-muted: #66716b;
+     --color-border: #e2e7e1;
+     --radius: 16px;
+     --shadow: 0 12px 32px rgba(26, 53, 39, 0.07);
+ }
+
+ * {
+     box-sizing: border-box;
+ }
+
+ html {
+     scroll-behavior: smooth;
+ }
+
+ body {
+     margin: 0;
+     color: var(--color-text);
+     background: var(--color-background);
+     font-family: Arial, Helvetica, sans-serif;
+     line-height: 1.7;
+ }
+
+ a {
+     color: inherit;
+     text-decoration: none;
+ }
+
+ .container {
+     width: min(1120px, calc(100% - 40px));
+     margin-inline: auto;
+ }
+
+ .site-header {
+     background: var(--color-surface);
+     border-bottom: 1px solid var(--color-border);
+ }
+
+ .header-inner {
+     min-height: 82px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 24px;
+ }
+
+ .brand {
+     font-size: 1.55rem;
+     font-weight: 800;
+     letter-spacing: -1px;
+ }
+
+ .brand span {
+     color: var(--color-primary);
+ }
+
+ .site-nav {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     gap: 24px;
+ }
+
+ .site-nav a {
+     color: var(--color-muted);
+     font-size: 0.92rem;
+     font-weight: 600;
+ }
+
+ .site-nav a:hover,
+ .site-nav a.active {
+     color: var(--color-primary);
+ }
+
+ .hero {
+     padding: 100px 0;
+     background: linear-gradient(120deg, #edf4e9, #f8f3e7);
+ }
+
+ .hero-content {
+     max-width: 1120px;
+ }
+
+ .eyebrow {
+     margin: 0 0 12px;
+     color: var(--color-primary);
+     font-size: 0.78rem;
+     font-weight: 800;
+     letter-spacing: 2px;
+ }
+
+ .hero h1 {
+     max-width: 760px;
+     margin: 0;
+     font-size: clamp(2.7rem, 6vw, 5rem);
+     line-height: 1.08;
+     letter-spacing: -3px;
+ }
+
+ .hero h1 span {
+     color: var(--color-primary);
+ }
+
+ .hero-description {
+     max-width: 640px;
+     margin: 24px 0 30px;
+     color: var(--color-muted);
+     font-size: 1.08rem;
+ }
+
+ .hero-actions {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 14px;
+ }
+
+ .btn {
+     display: inline-flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 48px;
+     padding: 12px 22px;
+     border: 1px solid transparent;
+     border-radius: 8px;
+     font-weight: 700;
+     transition: transform 0.2s, background 0.2s;
+ }
+
+ .btn:hover {
+     transform: translateY(-2px);
+ }
+
+ .btn-primary {
+     color: #ffffff;
+     background: var(--color-primary);
+ }
+
+ .btn-primary:hover {
+     background: var(--color-primary-dark);
+ }
+
+ .btn-secondary {
+     color: var(--color-primary);
+     background: #ffffff;
+     border-color: var(--color-border);
+ }
+
+ .section {
+     padding: 76px 0;
+ }
+
+ .welcome-grid {
+     display: grid;
+     grid-template-columns: 1.3fr 0.9fr;
+     align-items: center;
+     gap: 60px;
+ }
+
+ .section h2,
+ .feedback-banner h2 {
+     margin: 0 0 18px;
+     font-size: clamp(1.8rem, 4vw, 2.6rem);
+     line-height: 1.2;
+     letter-spacing: -1px;
+ }
+
+ .welcome-grid>div:first-child>p:not(.eyebrow) {
+     color: var(--color-muted);
+ }
+
+ .info-card,
+ .feature-card {
+     padding: 28px;
+     background: var(--color-surface);
+     border: 1px solid var(--color-border);
+     border-radius: var(--radius);
+     box-shadow: var(--shadow);
+ }
+
+ .info-card h3,
+ .feature-card h3 {
+     margin-top: 0;
+     font-size: 1.25rem;
+ }
+
+ .info-card p {
+     margin-bottom: 20px;
+ }
+
+ .small-note {
+     color: var(--color-muted);
+     font-size: 0.8rem;
+ }
+
+ .quick-links {
+     background: #ffffff;
+ }
+
+ .card-grid {
+     display: grid;
+     grid-template-columns: repeat(3, minmax(0, 1fr));
+     gap: 22px;
+     margin-top: 32px;
+ }
+
+ .card-number {
+     color: var(--color-primary);
+     font-size: 0.85rem;
+     font-weight: 800;
+ }
+
+ .feature-card p {
+     color: var(--color-muted);
+ }
+
+ .text-link {
+     color: var(--color-primary);
+     font-weight: 700;
+ }
+
+ .feedback-banner {
+     padding: 60px 0;
+     background: #eaf1e8;
+ }
+
+ .feedback-banner-inner {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 30px;
+ }
+
+ .feedback-banner h2 {
+     margin-bottom: 10px;
+ }
+
+ .site-footer {
+     padding: 32px 0;
+     background: #172c23;
+     color: #ffffff;
+ }
+
+ .footer-inner {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-between;
+     gap: 16px;
+ }
+
+ .footer-brand span {
+     color: var(--color-accent);
+ }
+
+ .footer-inner p {
+     margin: 0;
+     color: #d4dfd7;
+     font-size: 0.86rem;
+ }
+
+ @media (max-width: 800px) {
+     .header-inner {
+         padding: 18px 0;
+         align-items: flex-start;
+         flex-direction: column;
+     }
+
+     .site-nav {
+         gap: 12px 18px;
+     }
+
+     .hero {
+         padding: 72px 0;
+     }
+
+     .welcome-grid {
+         grid-template-columns: 1fr;
+         gap: 30px;
+     }
+
+     .card-grid {
+         grid-template-columns: 1fr 1fr;
+     }
+
+     .feedback-banner-inner {
+         align-items: flex-start;
+         flex-direction: column;
+     }
+ }
+
+ @media (max-width: 520px) {
+     .container {
+         width: min(100% - 28px, 1120px);
+     }
+
+     .hero h1 {
+         letter-spacing: -1.5px;
+     }
+
+     .card-grid {
+         grid-template-columns: 1fr;
+     }
+
+     .footer-inner {
+         align-items: flex-start;
+         flex-direction: column;
+     }
+ }
+
+
+/* ==========================================
+   CAMPUS BITES - MENU PAGE STYLES
+   ========================================== */
+
+/* Menu Hero Section */
+
+.menu-hero {
+    padding: 76px 0 62px;
+    background: linear-gradient(120deg, #edf4e9, #f8f3e7);
+}
+
+.menu-hero h1 {
+    margin: 0;
+    font-size: clamp(2.7rem, 6vw, 4rem);
+    line-height: 1.15;
+    letter-spacing: -2px;
+}
+
+.menu-hero h1 span {
+    color: var(--color-primary);
+}
+
+.menu-hero-description {
+    max-width: 650px;
+    margin: 22px 0 30px;
+    color: var(--color-muted);
+    font-size: 1.08rem;
+}
+
+/* Menu Category Navigation */
+
+.menu-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.menu-categories a {
+    display: inline-block;
+    padding: 10px 18px;
+    background: var(--color-surface);
+    color: var(--color-primary);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    font-weight: 700;
+    transition: background 0.2s, color 0.2s;
+}
+
+.menu-categories a:hover,
+.menu-categories a:focus-visible {
+    background: var(--color-primary);
+    color: #ffffff;
+}
+
+/* Menu Sections */
+
+.menu-section {
+    scroll-margin-top: 20px;
+}
+
+.menu-section h2 {
+    margin-bottom: 12px;
+}
+
+.menu-section-description {
+    margin: 0;
+    color: var(--color-muted);
+}
+
+.menu-alternate {
+    background: #ffffff;
+}
+
+/* Menu Card Grid */
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 32px;
+}
+
+/* Food Menu Cards */
+
+.menu-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 0;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.menu-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px rgba(26, 53, 39, 0.12);
+}
+
+/* Food Images */
+
+.menu-card-image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+/* Card Text Content */
+
+.menu-card-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 24px;
+}
+
+.menu-card h3 {
+    margin: 0 0 12px;
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+.menu-card p {
+    flex-grow: 1;
+    margin: 0 0 22px;
+    color: var(--color-muted);
+    font-size: 0.95rem;
+}
+
+/* Menu Item Prices */
+
+.menu-price {
+    display: block;
+    margin-top: auto;
+    color: var(--color-primary);
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+/* ==========================================
+   MENU PAGE RESPONSIVE DESIGN
+   ========================================== */
+
+/* Tablet Screens */
+
+@media (max-width: 800px) {
+
+    .menu-hero {
+        padding: 60px 0;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .menu-card-content {
+        padding: 22px;
+    }
+}
+
+/* Mobile Screens */
+
+@media (max-width: 520px) {
+
+    .menu-hero {
+        padding: 48px 0;
+    }
+
+    .menu-hero h1 {
+        letter-spacing: -1px;
+    }
+
+    .menu-hero-description {
+        font-size: 1rem;
+    }
+
+    .menu-categories {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-categories a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-grid {
 /* =========================================================
    CAMPUS BITES — SHARED STYLESHEET
    Homepage + Deals page
@@ -1099,6 +1605,31 @@ a:focus-visible {
         gap: 20px;
     }
 
+    .menu-card-content {
+        padding: 20px;
+    }
+
+    .menu-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .menu-price {
+        font-size: 1.2rem;
+    }
+}
+
+/* Accessibility: Reduced Motion */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .menu-card,
+    .menu-categories a {
+        transition: none;
+    }
+
+    .menu-card:hover {
+        transform: none;
+    }
     .combo-card-top {
         height: 230px;
     }
