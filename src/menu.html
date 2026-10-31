@@ -1,21 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <!-- Basic document metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the Campus Bites menu with fresh breakfast, fast food, main courses, beverages and desserts at affordable prices.">
+    <meta name="description" content="Explore the Campus Bites menu with fresh breakfast, fast food, main courses, beverages and desserts at student-friendly prices.">
     <title>Our Menu | Campus Bites</title>
+
+    <!-- Shared stylesheet across all pages -->
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 
 <body>
 
-    <!-- Shared Website Header -->
+    <!-- Shared Website Header and Navigation -->
     <header class="site-header">
         <div class="container header-inner">
-            <a class="brand" href="index.html">Campus<span>Bites</span></a>
+            <a class="brand" href="index.html" aria-label="Campus Bites home">Campus<span>Bites</span></a>
 
             <nav class="site-nav" aria-label="Main Navigation">
                 <a href="index.html">Home</a>
@@ -29,10 +31,9 @@
 
     <main>
 
-        <!-- Menu Introduction -->
+        <!-- Menu Introduction Hero Section -->
         <section class="menu-hero">
             <div class="container">
-                <p class="eyebrow">FRESH FOOD, HAPPY STUDENTS</p>
                 <h1>Explore Our <span>Menu</span></h1>
 
                 <p class="menu-hero-description">
@@ -40,7 +41,7 @@
                     discover freshly prepared meals at student-friendly prices.
                 </p>
 
-                <!-- Category Navigation -->
+                <!-- Category Navigation Filter Pills -->
                 <nav class="menu-categories" aria-label="Menu Categories">
                     <a href="#breakfast">Breakfast</a>
                     <a href="#fast-food">Fast Food</a>
@@ -50,10 +51,9 @@
             </div>
         </section>
 
-        <!-- Breakfast Section -->
+        <!-- Breakfast Menu Category Section -->
         <section class="section menu-section" id="breakfast">
             <div class="container">
-                <p class="eyebrow">START YOUR DAY RIGHT</p>
                 <h2>Breakfast</h2>
                 <p class="menu-section-description">
                     Fresh and delicious breakfast choices to fuel your morning.
@@ -61,6 +61,7 @@
 
                 <div class="menu-grid">
 
+                    <!-- Breakfast Item 1: Halwa Puri -->
                     <article class="menu-card">
                         <img src="../images/halwa-puri.png"
                              alt="Halwa puri served with chickpeas and traditional sweet halwa"
@@ -74,6 +75,7 @@
                         </div>
                     </article>
 
+                    <!-- Breakfast Item 2: Omelette & Paratha -->
                     <article class="menu-card">
                         <img src="../images/omelette-paratha.png"
                              alt="Fresh omelette served with golden crispy paratha"
@@ -87,6 +89,7 @@
                         </div>
                     </article>
 
+                    <!-- Breakfast Item 3: Egg Sandwich -->
                     <article class="menu-card">
                         <img src="../images/egg-sandwich.png"
                              alt="Toasted egg sandwich with vegetables"
@@ -104,10 +107,9 @@
             </div>
         </section>
 
-        <!-- Fast Food Section -->
+        <!-- Fast Food Menu Category Section -->
         <section class="section menu-section menu-alternate" id="fast-food">
             <div class="container">
-                <p class="eyebrow">QUICK AND TASTY</p>
                 <h2>Fast Food</h2>
                 <p class="menu-section-description">
                     Perfect snacks and meals between your classes.
@@ -115,6 +117,7 @@
 
                 <div class="menu-grid">
 
+                    <!-- Fast Food Item 1: Zinger Burger -->
                     <article class="menu-card">
                         <img src="../images/ zinger-burger.png"
                              alt="Crispy chicken zinger burger with lettuce and sauce"
@@ -128,6 +131,7 @@
                         </div>
                     </article>
 
+                    <!-- Fast Food Item 2: Chicken Shawarma -->
                     <article class="menu-card">
                         <img src="../images/chicken-shawarma.png"
                              alt="Chicken shawarma wrap filled with chicken and vegetables"
@@ -141,6 +145,7 @@
                         </div>
                     </article>
 
+                    <!-- Fast Food Item 3: Loaded Fries -->
                     <article class="menu-card">
                         <img src="../images/ loaded-fries.png"
                              alt="Golden french fries topped with melted cheese and sauces"
@@ -158,10 +163,9 @@
             </div>
         </section>
 
-        <!-- Main Course Section -->
+        <!-- Main Course Menu Category Section -->
         <section class="section menu-section" id="main-course">
             <div class="container">
-                <p class="eyebrow">FRESH AND FILLING</p>
                 <h2>Main Course</h2>
                 <p class="menu-section-description">
                     Enjoy satisfying meals prepared for your busy campus day.
@@ -169,6 +173,7 @@
 
                 <div class="menu-grid">
 
+                    <!-- Main Course Item 1: Chicken Biryani -->
                     <article class="menu-card">
                         <img src="../images/ chicken-biryani.png"
                              alt="Traditional Pakistani chicken biryani served with raita"
@@ -182,6 +187,7 @@
                         </div>
                     </article>
 
+                    <!-- Main Course Item 2: Chicken Karahi -->
                     <article class="menu-card">
                         <img src="../images/ chicken-karahi.png"
                              alt="Traditional Pakistani chicken karahi with fresh naan"
@@ -195,6 +201,7 @@
                         </div>
                     </article>
 
+                    <!-- Main Course Item 3: Daal Chawal -->
                     <article class="menu-card">
                         <img src="../images/ daal-chawal.png"
                              alt="Pakistani lentil curry served with white rice"
@@ -212,10 +219,9 @@
             </div>
         </section>
 
-        <!-- Beverages and Desserts Section -->
+        <!-- Beverages and Desserts Category Section -->
         <section class="section menu-section menu-alternate" id="beverages">
             <div class="container">
-                <p class="eyebrow">SOMETHING REFRESHING</p>
                 <h2>Beverages &amp; Desserts</h2>
                 <p class="menu-section-description">
                     Refresh yourself with drinks and sweet treats.
@@ -223,6 +229,7 @@
 
                 <div class="menu-grid">
 
+                    <!-- Beverage Item 1: Fresh Lime -->
                     <article class="menu-card">
                         <img src="../images/ fresh-lime.png"
                              alt="Refreshing fresh lime drink with lemon and mint"
@@ -236,6 +243,7 @@
                         </div>
                     </article>
 
+                    <!-- Dessert Item 2: Chocolate Brownie -->
                     <article class="menu-card">
                         <img src="../images/chocolate-brownie.png"
                              alt="Rich chocolate brownie with chocolate sauce"
@@ -249,6 +257,7 @@
                         </div>
                     </article>
 
+                    <!-- Beverage Item 3: Traditional Chai -->
                     <article class="menu-card">
                         <img src="../images/traditional-chai.png"
                              alt="Hot traditional Pakistani milk tea served in a ceramic cup"
@@ -266,7 +275,7 @@
             </div>
         </section>
 
-        <!-- Ordering Call to Action -->
+        <!-- Ordering Call to Action Banner -->
         <section class="feedback-banner">
             <div class="container feedback-banner-inner">
                 <div>
@@ -287,13 +296,12 @@
     <!-- Shared Website Footer -->
     <footer class="site-footer">
         <div class="container footer-inner">
-            <a class="brand footer-brand" href="index.html">
+            <a class="brand footer-brand" href="index.html" aria-label="Campus Bites home">
                 Campus<span>Bites</span>
             </a>
 
             <p>
-                &copy; 2026 Campus Bites Cafeteria
-                &bull; DevOps Fundamentals Project
+                &copy; 2026 Campus Bites Cafeteria &bull; DevOps Fundamentals Project
             </p>
         </div>
     </footer>
