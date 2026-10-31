@@ -2,19 +2,24 @@
 <html lang="en">
 
 <head>
+    <!-- Basic document metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Campus Bites - your central university cafeteria for fresh meals, daily student deals, and friendly dining.">
     <title>Campus Bites | University Cafeteria</title>
+
+    <!-- Shared stylesheet across all pages -->
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 
 <body>
 
+    <!-- Shared Website Header and Navigation -->
     <header class="site-header">
         <div class="container header-inner">
-            <a class="brand" href="index.html">Campus<span>Bites</span></a>
+            <a class="brand" href="index.html" aria-label="Campus Bites home">Campus<span>Bites</span></a>
             <nav class="site-nav" aria-label="Main Navigation">
-                <a class="active" href="index.html">Home</a>
+                <a class="active" href="index.html" aria-current="page">Home</a>
                 <a href="menu.html">Menu</a>
                 <a href="deals.html">Deals</a>
                 <a href="order.html">How to Order</a>
@@ -24,20 +29,30 @@
     </header>
 
     <main>
+        <!-- Homepage Hero Section with Visual Split Layout -->
         <section class="hero">
-            <div class="container hero-content">
-                <h1>Welcome to <span>Campus Bites</span></h1>
-                <p class="hero-description">
-                    Your central campus spot for fresh meals, daily student deals, and a relaxing place to eat between
-                    lectures.
-                </p>
-                <div class="hero-actions">
-                    <a class="btn btn-primary" href="menu.html">View Menu</a>
-                    <a class="btn btn-secondary" href="deals.html">Today's Deals</a>
+            <div class="container hero-content home-hero-grid">
+                <div class="home-hero-text">
+                    <h1>Welcome to <span>Campus Bites</span></h1>
+                    <p class="hero-description">
+                        Your central campus spot for fresh meals, daily student deals, and a relaxing place to eat between
+                        lectures.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="menu.html">View Menu</a>
+                        <a class="btn btn-secondary" href="deals.html">Today's Deals</a>
+                    </div>
+                </div>
+                <div class="home-hero-visual">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80"
+                         alt="Freshly prepared campus dining meals"
+                         class="home-hero-image"
+                         fetchpriority="high">
                 </div>
             </div>
         </section>
 
+        <!-- Welcome & Cafeteria Information Section -->
         <section class="section welcome">
             <div class="container welcome-grid">
                 <div>
@@ -51,6 +66,10 @@
                 </div>
 
                 <div class="info-card">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=700&q=80"
+                         alt="Comfortable cafeteria seating and dining hall"
+                         class="welcome-card-image"
+                         loading="lazy">
                     <h3>Cafeteria Details</h3>
                     <p>
                         <strong>Location:</strong><br>
@@ -66,23 +85,39 @@
             </div>
         </section>
 
+        <!-- Explore Quick Links Feature Section -->
         <section class="section quick-links">
             <div class="container">
                 <h2>Explore Campus Bites</h2>
                 <div class="card-grid">
+                    <!-- Feature Card 1: Food Menu -->
                     <article class="feature-card">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80"
+                             alt="Freshly prepared campus food menu dishes"
+                             class="feature-card-image"
+                             loading="lazy">
                         <h3>Food Menu</h3>
                         <p>Browse our breakfast items, fast food, main course dishes, and beverages.</p>
                         <a class="text-link" href="menu.html">Explore Menu &rarr;</a>
                     </article>
 
+                    <!-- Feature Card 2: Daily Deals -->
                     <article class="feature-card">
+                        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=600&q=80"
+                             alt="Affordable student meal deals and combinations"
+                             class="feature-card-image"
+                             loading="lazy">
                         <h3>Daily Deals</h3>
                         <p>Check out student combos and budget-friendly daily meal specials.</p>
                         <a class="text-link" href="deals.html">See Deals &rarr;</a>
                     </article>
 
+                    <!-- Feature Card 3: Order Guide -->
                     <article class="feature-card">
+                        <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=600&q=80"
+                             alt="Smooth ordering process at the cafeteria counter"
+                             class="feature-card-image"
+                             loading="lazy">
                         <h3>Order Guide</h3>
                         <p>Learn how to select items, pay at the counter, and collect your food token.</p>
                         <a class="text-link" href="order.html">View Steps &rarr;</a>
@@ -91,6 +126,7 @@
             </div>
         </section>
 
+        <!-- Feedback Call to Action Banner -->
         <section class="feedback-banner">
             <div class="container feedback-banner-inner">
                 <div>
@@ -102,9 +138,10 @@
         </section>
     </main>
 
+    <!-- Shared Website Footer -->
     <footer class="site-footer">
         <div class="container footer-inner">
-            <a class="brand footer-brand" href="index.html">Campus<span>Bites</span></a>
+            <a class="brand footer-brand" href="index.html" aria-label="Campus Bites home">Campus<span>Bites</span></a>
             <p>&copy; 2026 Campus Bites Cafeteria &bull; DevOps Fundamentals Project</p>
         </div>
     </footer>
